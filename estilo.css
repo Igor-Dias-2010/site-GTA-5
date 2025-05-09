@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+
+}
+
+#home {
+    background: black;
+    color: white;
+    background-image: url(gta\ 5\ logo\ remastered.jpg);
+    background-size: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    animation: zoomAnim 4s ease-in-out infinite;
+}
+
+@keyframes zoomAnim {
+    0% {
+        background-size: 300px;
+    }
+
+    50% {
+        background-size: 340px;
+    }
+
+    100% {
+        background-size: 300px
+    }
+
+}
+
+
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px transition: all 0.3s ease;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: blue;
+}
+
+#mike {
+    color: blue;
+}
+
+#frank {
+    color: green;
+}
+
+#trev {
+    color: orangered;
+}
+
+main {
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+a.ativo {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    color: orangered;
+    transform: scale(1.2);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.galeria img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+h2 span img {
+    height: 200px;
+    width: 150px;
+    vertical-align: middle;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+h2 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h2 span img:hover {
+    transform: scale(1.1);
+}
+
+#spanmike img {
+    box-shadow: 0 0 10px blue;
+}
+
+#spanfrank img {
+    box-shadow: 0 0 10px green;
+    height: 210px;
+    width: 130px;
+
+}
+
+#spantrev img {
+    box-shadow: 0 0 10px orangered;
+    height: 200px;
+    width: 130px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.rocknorth-container {
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.rocknorth-container:hover {
+    transform: scale(1.1);
+}
+
+.rocknorth {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.rocknorth-container figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.santos-container {
+    display: grid;
+    place-items: center;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.santos-container:hover {
+    transform: scale(1.1);
+}
+
+.santos {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.santos-container figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.union-container {
+    display: grid;
+    place-items: center;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.union-container:hover {
+    transform: scale(1.1);
+}
+
+.union {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.union-container figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.igor-container {
+    display: grid;
+    place-items: center;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.igor-container:hover {
+    transform: scale(1.1);
+}
+
+.igor {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.igor-container figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+
+    /* Ajustes para o header */
+    header {
+        padding: 10px;
+    }
+
+    header nav {
+        text-align: center;
+    }
+
+    header nav a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    /* Ajuste no conteúdo principal */
+    main {
+        padding: 15px;
+    }
+
+    /* Ajustes nas imagens das seções */
+    .santos-container img,
+    .union-container img,
+    .rocknorth-container img,
+    .igor-container img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* Ajustes nos textos */
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.3em;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    /* Ajustes nas imagens da galeria */
+    .galeria img {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    /* Ajuste no layout das imagens dentro das seções de personagens */
+    #michael img,
+    #franklin img,
+    #trevor img {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+
+    /* Estilo da seção de créditos */
+    #creditos p {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* Ajustes nas imagens do personagem Igor */
+    .igor-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .igor {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    /* Ajuste no estilo do footer (caso tenha) */
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ajustes no link do email */
+    a {
+        font-size: 14px;
+    }
+
+    /* Ajustes nas fontes de links ativos */
+    .ativo {
+        font-size: 0.9em;
+    }
+}
